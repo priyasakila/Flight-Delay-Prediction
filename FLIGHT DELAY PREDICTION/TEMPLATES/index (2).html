@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Flight Delay Prediction</title>
+</head>
+<body background="flight image.jpg" style="background-repeat:no-repeat; background-size:100% 100%" text='black'>
+<h1>
+    <b>
+
+        <i>
+
+            Flight Delay Prediction
+        </i>
+    </b>
+</h1>
+
+<h2> Enter the details to check whether Flight Delay or not!</h2>
+<h4>
+<form action="/getdata" method="post">
+
+<table>
+<tr>
+<td>flight number<td>:&nbsp&nbsp&nbsp<input type='text' name='flnum' placeholder='Enter flight number'Enter Numerical part required='required'/><br>
+</tr>
+<tr>
+<td>month<td>:&nbsp&nbsp&nbsp<input type='text' name='month' placeholder='Enter month' required='required' /><br>
+</tr>
+<tr>
+<td>month<td>:&nbsp&nbsp&nbsp<input type='text' name='daymonth' placeholder='day of month' required='required'/><br>
+</tr>
+<tr>
+<td>dayofweek<td>:&nbsp&nbsp&nbsp<input type='text' name='dayofweek' placeholder='Enter 0 for no 1 for yes' required='required' /><br>
+</tr>
+<tr>
+<td>origin<td>:&nbsp&nbsp&nbsp<input type='text' name='origin' placeholder='ORIGIN' required='required' /><br>
+</tr>
+<tr>
+<td>dest<td>:&nbsp&nbsp&nbsp<input type='text' name='dest' placeholder='DEST' required='required' /><br>
+</tr>
+   <tr>
+<td>arrivaltime<td>:&nbsp&nbsp&nbsp<input type='text' name='arrivaltime' placeholder='arrivaltime' required='required' /><br>
+</tr>
+    <tr>
+<td>depdelay<td>:&nbsp&nbsp&nbsp<input type='text' name='depdelay' placeholder='depdelay' required='required' /><br>
+</tr>
+<tr>
+<td><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button type="submit" class="btn btn-primary btn-block btn-large"> Predict </button>
+</td>
+</tr>
+</table>
+
+</form>
+</h4>
+
+<h2>
+<b>
+{{ prediction_text }}
+</b>
+</h2>
+</body>
+</html>
